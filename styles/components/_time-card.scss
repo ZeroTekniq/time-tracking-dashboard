@@ -1,0 +1,77 @@
+@use '../globals/colors' as c;
+@use '../globals/typography' as t;
+
+
+
+.card-container {
+    display: flex;
+    width: 20.4375rem;
+    height: 10rem;
+
+    &__backing {
+        width: 100%;
+        height: 10rem;
+        background-size: 5rem 5rem;
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-position-x: right 1rem;
+        background-position-y: top -0.5rem;
+        border-radius: 0.9375rem;
+    }
+
+    &__face {
+        margin-top: 2.37rem;
+        padding: 1.5rem;
+        width: 100%;
+        height: 7.625rem;
+        background-color: c.$clr-navy-900;
+        border-radius: 0.9375rem;
+    }
+
+    &__current-time {
+        @include t.text-preset-3;
+        color: c.$clr-white;
+    }
+
+    &__previous-time {
+        @include t.text-preset-6;
+        width: 7.8125rem;
+        color: c.$clr-navy-200;
+        text-align: right;
+    }
+
+    &__button {
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+.work {
+    background-color: c.$clr-orange;
+    background-image: url(/images/icon-work.svg);
+}
+
+.play {
+    background-color: c.$clr-blue-300;
+    background-image: url(/images/icon-play.svg);
+}
+
+.study {
+    background-color: c.$clr-pink-400;
+    background-image: url(/images/icon-study.svg);
+}
+
+.exercise {
+    background-color: c.$clr-green-400;
+    background-image: url(/images/icon-exercise.svg);
+}
+
+.social {
+    background-color: c.$clr-purple-600;
+    background-image: url(/images/icon-social.svg);
+}
+
+.self-care {
+    background-color: c.$clr-yellow-300;
+    background-image: url(/images/icon-self-care.svg);
+}
