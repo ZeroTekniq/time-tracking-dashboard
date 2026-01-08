@@ -1,8 +1,10 @@
+@use '../globals/colors' as c;
 
 body { 
     display: grid;
     place-items: center;
     height: 100vh;
+    background-color: c.$clr-navy-950;
 }
 
 .section__hours {
@@ -18,9 +20,7 @@ body {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        ;
-        // height: 1.125rem;
         align-items: center;
-        // gap: 4.5rem;
+        
     }
 }
