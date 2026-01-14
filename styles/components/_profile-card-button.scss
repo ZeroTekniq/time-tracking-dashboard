@@ -18,5 +18,9 @@
     color: c.$clr-purple-500;
     background-color: c.$clr-navy-900;
     border: none;
+}
 
+.profile-button:is(:hover, .active) {
+    cursor: pointer;
+    color: c.$clr-white;
 }

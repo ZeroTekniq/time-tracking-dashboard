@@ -4,13 +4,13 @@
 
 
 .card-container {
-    display: flex;
+    display: grid;
     width: 20.4375rem;
     height: 10rem;
 
     &__backing {
         width: 100%;
-        height: 10rem;
+        height: 9.9rem;
         background-size: 5rem 5rem;
         background-repeat: no-repeat;
         background-position: top right;
@@ -28,6 +28,11 @@
         border-radius: 0.9375rem;
     }
 
+    &__face:hover {
+        cursor: pointer;
+        background-color: c.$clr-navy-800;
+    }
+
     &__current-time {
         @include t.text-preset-3;
         color: c.$clr-white;
@@ -35,9 +40,7 @@
 
     &__previous-time {
         @include t.text-preset-6;
-        width: 7.8125rem;
         color: c.$clr-navy-200;
-        text-align: right;
     }
 
     &__button {

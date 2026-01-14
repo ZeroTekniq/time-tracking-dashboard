@@ -2,7 +2,7 @@
 @use '../globals/typography' as t;
 
 .profile-card {
-    margin: 5.06rem 1.5rem 1.5rem 1.5rem;
+    margin-top: 5.06rem;
     width: 20.4375rem;
     height: 12.6875rem;
 
@@ -10,6 +10,7 @@
         width: 4.125rem;
         height: 4.125rem;
         border-radius: 50%;
+        border: 3px solid c.$clr-white;
     }
 
     &__back {
