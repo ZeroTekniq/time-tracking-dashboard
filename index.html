@@ -7,36 +7,96 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./dist/styles.css">
 
-  <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Time tracking dashboard</title>
 </head>
 <body>
 
-  <section class="profile-card">
-    <div class="profile-card__back">
-      <div class="profile-card__face">
-        <img class="profile-card__img" src="./images/image-jeremy.png" alt="Jeremy Robson profile picture">
-        <div class="profile-card__name-flexbox">
-          <p class="profile__title">Report for</p>
-          <p class="profile__name">Jeremy Robson</p>
+  <div class="wrapper">
+    <section id="profile" class="profile-card" style="grid-area: box-1">
+      <div class="profile-card__back">
+        <div class="profile-card__face">
+          <img class="profile-card__img" src="./images/image-jeremy.png" alt="Jeremy Robson profile picture">
+          <div class="profile-card__name-flexbox">
+            <p class="profile__title">Report for</p>
+            <p class="profile__name">Jeremy Robson</p>
+          </div>
+        </div>
+          <div class="button-flexbox">
+            <button class="profile-button" data-option="daily">Daily</button>
+            <button class="profile-button" data-option="weekly">Weekly</button>
+            <button class="profile-button" data-option="monthly">Monthly</button>
+          </div>
+      </div>
+    </section>
+    <section class="section__hours">
+      <!-- <div class="card-container" style="grid-area: box-2">
+        <div class="card-container__backing work">
+        <div class="card-container__face">
+          <button class="card-container__button">Work</button>
+          <div class="card-container__hours">
+            <p class="card-container__current-time">32hrs</p>
+            <p class="card-container__previous-time">Previous - 36hrs</p>
+          </div>
+        </div>
         </div>
       </div>
-        <div class="button-flexbox">
-          <button class="profile-button" data-option="daily">Daily</button>
-          <button class="profile-button" data-option="weekly">Weekly</button>
-          <button class="profile-button" data-option="monthly">Monthly</button>
+      <div class="card-container" style="grid-area: box-3">
+        <div class="card-container__backing play">
+        <div class="card-container__face">
+          <p class="card-container__button">Play</p>
+          <div class="card-container__hours">
+            <p class="card-container__current-time">10hrs</p>
+            <p class="card-container__previous-time">Previous - 8hrs</p>
+          </div>
         </div>
-    </div>
-  </section>
-
-  <section class="section__hours">
-    <!-- Time cards rendered here from script -->
-  </section>
+        </div>
+      </div>
+      <div class="card-container" style="grid-area: box-4">
+        <div class="card-container__backing study">
+        <div class="card-container__face">
+          <button class="card-container__button">Study</button>
+          <div class="card-container__hours">
+            <p class="card-container__current-time">4hrs</p>
+            <p class="card-container__previous-time">Previous - 7hrs</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="card-container" style="grid-area: box-5">
+        <div class="card-container__backing exercise">
+        <div class="card-container__face">
+          <button class="card-container__button">Exercise</button>
+          <div class="card-container__hours">
+            <p class="card-container__current-time">4hrs</p>
+            <p class="card-container__previous-time">Previous - 5hrs</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="card-container" style="grid-area: box-6">
+        <div class="card-container__backing social">
+        <div class="card-container__face">
+          <button class="card-container__button">Social</button>
+          <div class="card-container__hours">
+            <p class="card-container__current-time">5hrs</p>
+            <p class="card-container__previous-time">Previous - 10hrs</p>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="card-container" style="grid-area: box-7">
+        <div class="card-container__backing self-care">
+        <div class="card-container__face">
+          <button class="card-container__button">Self Care</button>
+          <div class="card-container__hours">
+            <p class="card-container__current-time">2hrs</p>
+            <p class="card-container__previous-time">Previous - 2hrs</p>
+          </div>
+        </div>
+        </div>
+      </div>  -->
+    </section>
+  </div>
 
   
 <script src="./dist/script.js"></script>

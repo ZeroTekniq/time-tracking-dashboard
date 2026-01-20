@@ -7,20 +7,24 @@ body {
     background-color: c.$clr-navy-950;
 }
 
-.section__hours {
-    display: flex;
-    flex-direction: column;
+.wrapper {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
     gap: 1.5rem;
+    grid-template-areas: 
+    "box-1"
+    "section__hours";
 }
 
 .card-container {
-    
+    margin-bottom: 1.5rem;
+
     &__hours {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
         align-items: center;
-        
     }
 }

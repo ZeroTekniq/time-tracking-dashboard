@@ -40,7 +40,6 @@ const renderCards = (clickedButton) => {
         const card = document.createElement('div');
         card.classList.add('card-container');
         card.innerHTML = `
-            <<div class="card-container">
                 <div class="card-container__backing ${activityClass}">
                 <div class="card-container__face">
                     <button class="card-container__button">${name}</button>
@@ -59,7 +58,9 @@ const renderCards = (clickedButton) => {
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
+
         activateButton(button)
+        
         const clickedButton = button.dataset.option; 
     
         renderCards(clickedButton)

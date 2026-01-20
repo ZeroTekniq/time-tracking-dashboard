@@ -1,7 +1,10 @@
 @use '../globals/colors' as c;
 @use '../globals/typography' as t;
 
-
+.wrapper {
+    display: grid;
+    place-items: center;
+}
 
 .card-container {
     display: grid;
@@ -21,7 +24,7 @@
 
     &__face {
         margin-top: 2.37rem;
-        padding: 1.5rem;
+        padding: 1.4rem;
         width: 100%;
         height: 7.625rem;
         background-color: c.$clr-navy-900;
