@@ -1,24 +1,22 @@
-
+@use '../globals/typography' as t;
 
 @media screen and (width >= 48rem) {
 
     body {
-        display: grid;
-        place-items: center;
         height: 95vh;
     }
 
     .wrapper {
+        height: 42.3rem;
         display: grid;
-        gap: 4.5rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: 13.38125rem calc(13.38125rem * 2);
+        gap: 1.5rem;
         grid-template-areas: 
         "box-1"
         "section__hours";
     }    
     
     .profile-card {
+        margin-top: -0.5rem;
         width: 38.3rem;
         height: 12.6875rem;   
 
@@ -41,12 +39,9 @@
 
     .section__hours {
         display: grid;
-        grid-auto-columns: auto 11.75rem;
-        grid-auto-rows: auto 13.38125rem;
         grid-template-areas: 
         "box-2 box-3 box-4"
-        "box-5 box-6 box-7"
-        ;
+        "box-5 box-6 box-7";
         gap: 1.5rem;
     }
 
@@ -75,3 +70,87 @@
     }
 }
 
+
+@media screen and (width >= 90rem) {
+    
+    .wrapper {
+        gap: 2rem;
+        width: 69.8rem;
+        height: 32.75rem;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 32.5rem;
+        grid-template-areas: 
+        "box-1 section__hours";
+    }
+
+    .profile-card {
+        margin: 0;
+        width: 15.9375rem;
+        height: 32.5rem;
+
+        &__img {
+            width: 5rem;
+            height: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        &__face {
+            padding-top: 2rem;
+            flex-direction: column;
+            height: 22.125rem;
+            justify-content: start;
+            place-items: start;
+        }
+    }
+
+    .profile {
+
+        &__name {
+            font-size: 2.5rem;
+            font-weight: 300;
+            line-height: 2.9375rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .button-flexbox {
+        margin-top: 3rem;
+        padding-left: 2rem;
+        flex-direction: column;
+        align-items: start;
+        gap: 1.31rem;
+    }
+    .profile-button {
+        text-align: left;
+    }
+
+    .card-container {
+        width: 15.9375rem;
+        height: 15.25rem;
+        // border: 2px solid red;
+
+        &__backing {
+            height: 10rem;
+            background-size: 4.875rem 4.875rem;
+        }
+
+        &__face {
+            padding: 2rem;
+            margin-top: 2.81rem;
+            height: 12.4375rem;
+        }
+
+        &__current-time {
+            margin-bottom: -1rem;
+            font-size: 3.5rem;
+            line-height: 4.125rem;
+        }
+    }
+
+    .section__hours {
+        width: 51.8rem;
+        height: 32.5rem;
+        gap: 2rem;
+    }
+
+}

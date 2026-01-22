@@ -1,10 +1,6 @@
 @use '../globals/colors' as c;
 @use '../globals/typography' as t;
 
-.wrapper {
-    display: grid;
-    place-items: center;
-}
 
 .card-container {
     display: grid;
