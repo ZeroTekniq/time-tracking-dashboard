@@ -11,8 +11,8 @@
 </head>
 <body>
 
-  <div class="wrapper">
-    <section id="profile" class="profile-card" style="grid-area: box-1">
+  <main class="wrapper">
+    <section id="profile" class="profile-card" style="grid-area: box-1" aria-labelledby="profile-heading">
       <div class="profile-card__back">
         <div class="profile-card__face">
           <img class="profile-card__img" src="./images/image-jeremy.png" alt="Jeremy Robson profile picture">
@@ -29,74 +29,74 @@
       </div>
     </section>
     <section class="section__hours">
-      <div class="card-container" style="grid-area: box-2">
+      <div class="card-container" style="grid-area: box-2" aria-labelledby="work-heading">
         <div class="card-container__backing work">
-        <div class="card-container__face">
+        <div class="card-container__face" tabindex="0" role="button" aria-label="View work activity details">
           <button class="card-container__button">Work</button>
           <div class="card-container__hours">
-            <p class="card-container__current-time">32hrs</p>
-            <p class="card-container__previous-time">Previous - 36hrs</p>
+            <p class="card-container__current-time" aria-label="Current week: 32 hours">32hrs</p>
+            <p class="card-container__previous-time" aria-label="Last week: 36 hours">Previous - 36hrs</p>
           </div>
         </div>
         </div>
       </div>
-      <div class="card-container" style="grid-area: box-3">
+      <div class="card-container" style="grid-area: box-3" aria-labelledby="play-heading">
         <div class="card-container__backing play">
-        <div class="card-container__face">
+        <div class="card-container__face" tabindex="0" role="button" aria-label="View play activity details">
           <p class="card-container__button">Play</p>
           <div class="card-container__hours">
-            <p class="card-container__current-time">10hrs</p>
-            <p class="card-container__previous-time">Previous - 8hrs</p>
+            <p class="card-container__current-time" aria-label="Current week: 10 hours">10hrs</p>
+            <p class="card-container__previous-time" aria-label="Last week: 8 hours">Previous - 8hrs</p>
           </div>
         </div>
         </div>
       </div>
-      <div class="card-container" style="grid-area: box-4">
+      <div class="card-container" style="grid-area: box-4" aria-labelledby="study-heading">
         <div class="card-container__backing study">
-        <div class="card-container__face">
+        <div class="card-container__face" tabindex="0" role="button" aria-label="View study activity details">
           <button class="card-container__button">Study</button>
           <div class="card-container__hours">
-            <p class="card-container__current-time">4hrs</p>
-            <p class="card-container__previous-time">Previous - 7hrs</p>
+            <p class="card-container__current-time" aria-label="Current week: 4 hours">4hrs</p>
+            <p class="card-container__previous-time" aria-label="Last week: 7 hours">Previous - 7hrs</p>
           </div>
         </div>
         </div>
       </div>
-      <div class="card-container" style="grid-area: box-5">
+      <div class="card-container" style="grid-area: box-5" aria-labelledby="exercise-heading">
         <div class="card-container__backing exercise">
-        <div class="card-container__face">
+        <div class="card-container__face" tabindex="0" role="button" aria-label="View exercise activity details">
           <button class="card-container__button">Exercise</button>
           <div class="card-container__hours">
-            <p class="card-container__current-time">4hrs</p>
-            <p class="card-container__previous-time">Previous - 5hrs</p>
+            <p class="card-container__current-time" aria-label="Current week: 4 hours">4hrs</p>
+            <p class="card-container__previous-time" aria-label="Last week: 5 hours">Previous - 5hrs</p>
           </div>
         </div>
         </div>
       </div>
-      <div class="card-container" style="grid-area: box-6">
+      <div class="card-container" style="grid-area: box-6" aria-labelledby="social-heading">
         <div class="card-container__backing social">
-        <div class="card-container__face">
+        <div class="card-container__face" tabindex="0" role="button" aria-label="View social activity details">
           <button class="card-container__button">Social</button>
           <div class="card-container__hours">
-            <p class="card-container__current-time">5hrs</p>
-            <p class="card-container__previous-time">Previous - 10hrs</p>
+            <p class="card-container__current-time" aria-label="Current week: 5 hours">5hrs</p>
+            <p class="card-container__previous-time" aria-label="Last week: 10 hours">Previous - 10hrs</p>
           </div>
         </div>
         </div>
       </div>
-      <div class="card-container" style="grid-area: box-7">
+      <div class="card-container" style="grid-area: box-7" aria-labelledby="self-care-heading">
         <div class="card-container__backing self-care">
-        <div class="card-container__face">
+        <div class="card-container__face" tabindex="0" role="button" aria-label="View self care activity details">
           <button class="card-container__button">Self Care</button>
           <div class="card-container__hours">
-            <p class="card-container__current-time">2hrs</p>
-            <p class="card-container__previous-time">Previous - 2hrs</p>
+            <p class="card-container__current-time" aria-label="Current week: 2 hours">2hrs</p>
+            <p class="card-container__previous-time" aria-label="Last week: 2 hours">Previous - 2hrs</p>
           </div>
         </div>
         </div>
       </div> 
     </section>
-  </div>
+  </main>
 
   
 <script src="./dist/script.js"></script>
